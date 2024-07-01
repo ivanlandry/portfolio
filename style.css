@@ -1,0 +1,13 @@
+
+#qualites ul{
+    list-style-type: square;
+}
+
+#qualites li::marker{
+    color: dodgerblue;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
