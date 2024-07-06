@@ -8,80 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>CV</title>
+    <title>Portfolio</title>
 </head>
 <body class="bg-dark text-white">
 
+<nav class="row bg-dark ">
+    <div class="d-flex flex-row justify-content-between py-2 px-4">
+        <h5><a href="#" class="menu active" onclick="removeActive(this)">Accueil</a></h5>
+        <div>
+            <a href="#portfolio" class="menu active" onclick="removeActive(this)">Portfolio</a>
+            <a class="mx-3 menu active" href="#contact" onclick="removeActive(this)">
+                Contact
+            </a>
+        </div>
+    </div>
+</nav>
+
 <div class="container-fluid">
-
-    <nav class="row bg-dark mb-2 text-white">
-        <div class="d-flex flex-row justify-content-between py-2 px-4">
-            <h5><a href="index.html">Accueil</a></h5>
-            <div>
-                <a href="portfolio.html">Portfolio</a>
-                <a class="mx-3" href="contact.html">
-                    Contact
-                </a>
-            </div>
-        </div>
-    </nav>
-    <hr>
     <div class="row">
-        <div class="col-md-3 text-white ps-5" id="gauche">
-            <div id="competences text-start">
-                <h5 class="mb-4 mt-2">COMPETENCES</h5>
-                <div>
-                    <h6>PHP</h6>
-                    <progress max="100" value="65"></progress>
-                </div>
-                <div>
-                    <h6>JavaScript/React</h6>
-                    <progress max="100" value="20"></progress>
-                </div>
-                <div>
-                    <h6>Laravel</h6>
-                    <progress max="100" value="80"></progress>
-                </div>
-                <div>
-                    <h6>Mysql</h6>
-                    <progress max="100" value="50"></progress>
-                </div>
-                <div>
-                    <h6>C#</h6>
-                    <progress max="100" value="70"></progress>
-                </div>
-                <div>
-                    <h6>Java/Spring Boot</h6>
-                    <progress max="100" value="70"></progress>
-                </div>
-            </div>
-
-            <div id="qualites">
-                <h5 class="mb-4 mt-2">QUALITÉS</h5>
-                <div>
-                    <ul>
-                        <li>Esprit d'équipes</li>
-                        <li>Autonome</li>
-                        <li>Bienveillant</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="interets">
-                <h5 class="mb-4 mt-2">CENTRES D'INTÉRET</h5>
-                <div>
-                    <ul>
-                        <li>Animés</li>
-                        <li>Mangas</li>
-                        <li>Lecture</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div id="profil" class="mb-5">
-                <h5 class="bg-primary text-white px-3 py-2">PROFIL</h5>
+                <h5 class="bg-primary  px-3 py-2">PROFIL</h5>
                 <p>
                     Étudiant passionné par la programmation, actuellement en dernière année de la technique et à la recherche
                     d'opportunités pour démarrer ma carrière dans le développement de logiciels.
@@ -89,77 +36,72 @@
                     projets innovants.
                 </p>
             </div>
+        </div>
 
-            <div id="formation" class="mb-5">
-                <h5 class="bg-primary text-white px-3 py-2">FORMATION</h5>
-
-                <div class="mb-2 d-flex justify-content-between flex-row">
-                    <div>
-                            <span class="fw-bold">
-                                Baccalauréat D (Mathéamtiques et science de la vie et de la terre)
-                            </span><br>
-                        <span class="text-secondary">College Saint-thomas D'Aquin de Bafoussam</span>
-                    </div>
-                    <div>
-                        <span>Juin 2017</span>
-                    </div>
+        <div class="col-md-12 text-white">
+            <h5 class="bg-primary  px-3 py-2">COMPETENCES</h5>
+            <br>
+            <div id="competences" class="d-flex flex-wrap justify-content-around">
+                <div class="border border-primary border-5 rounded-3 text-center align-items-center p-3 m-2">
+                    <img src="images/skills/html.png" class="img-fluid w-100" style="height: 120px">
+                    <h5 class="">HTML</h5>
                 </div>
-
-                <div class="mb-2 d-flex justify-content-between flex-row">
-                    <div>
-                            <span class="fw-bold">
-                                Licence Technologique en Informatique et Résaeux
-                            </span><br>
-                        <span class="text-secondary">IUT Fotso Victor De Bandjoun</span>
-                    </div>
-                    <div>
-                        <span>Aout 2020</span>
-                    </div>
+                <div class="border border-primary border-5 rounded-3 text-center align-items-center p-3 m-2">
+                    <img src="images/skills/css.png" class="img-fluid w-100" style="height: 120px">
+                    <h5 class="">CSS</h5>
                 </div>
-
-                <div class="d-flex justify-content-between flex-row">
-                    <div>
-                            <span class="fw-bold">
-                                DEC en Technique de L'informatique
-                            </span><br>
-                        <span class="text-secondary">Cégep de Trois-rivières</span>
-                    </div>
-                    <div>
-                        <span>D'Aout 2022 à Mai 2025</span>
-                    </div>
+                <div class="border border-primary border-5 rounded-3 text-center align-items-center p-3 m-2">
+                    <img src="images/skills/js.png" class="img-fluid w-100" style="height: 120px">
+                    <h5 class="">JS</h5>
                 </div>
-
-            </div>
-
-
-            <div id="experiences">
-                <h5 class="bg-primary text-white px-3 py-2">EXPERIENCES PROFESIONNELLES</h5>
-
-                <div>
-                    <div class="d-flex justify-content-between flex-row">
-                        <div>
-                            <span class="fw-bold">
-                                Stagiaire developpeur
-                            </span><br>
-                            <span class="fw-light">VITTECK</span>
-                        </div>
-                        <div>
-                            <span>Mars 2020 à Juin 2020</span>
-                        </div>
-                    </div>
-                    <ul>
-                        <li class="text-secondary">Intégration des maquettes de sites avec HTML/CSS.</li>
-                        <li class="text-secondary">Participation a la réalisation d'une app de tracking de colis a
-                            l'aide de reactJS.
-                        </li>
-                        <li class="text-secondary">Initiation à git et github</li>
-                    </ul>
+                <div class="border border-primary border-5 rounded-3 text-center align-items-center p-3 m-2">
+                    <img src="images/skills/github.png" class="img-fluid w-100" style="height: 120px">
+                    <h5 class="">GITHUB</h5>
                 </div>
-
+                <div class="border border-primary border-5 rounded-3 text-center align-items-center p-3 m-2">
+                    <img src="images/skills/csharp.png" class="img-fluid w-100" style="height: 120px">
+                    <h5 class="">C#</h5>
+                </div>
+                <div class="border border-primary border-5 rounded-3 text-center align-items-center p-3 m-2">
+                    <img src="images/skills/laravel.png" class="img-fluid w-100" style="height: 120px">
+                    <h5 class="">Laravel</h5>
+                </div>
             </div>
 
         </div>
     </div>
+    <h5 class="bg-primary  px-3 py-2 my-4">PORTFOLIO</h5>
+
+    <div class="row mt-2 px-2" id="portfolio">
+
+        <div class="col-md-6">
+
+            <h6 class="text-center"><a href="https://convertisseurtexteaudio-landry.netlify.app" target="_blank" class="fs-4">Convertisseur de texte en audio</a></h6>
+            <div class="zoom-effect"> <img src="images/convertisseur.png" alt="" class="img-fluid"></div>
+            <p class="py-1 px-1 text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa doloribus explicabo facilis fugit impedit,
+                maxime nam necessitatibus nisi nostrum nulla obcaecati, officiis quaerat sapiente vitae. Aliquid aspernatur magni quaerat.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <h6 class="text-center"><a href="https://film-landry.netlify.app/" target="_blank" class="fs-4">Films</a></h6>
+            <div class="zoom-effect"> <img src="images/film-react.png" alt="" class="img-fluid"></div>
+            <p class="py-1 px-1 text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa doloribus explicabo facilis fugit impedit,
+                maxime nam necessitatibus nisi nostrum nulla obcaecati, officiis quaerat sapiente vitae. Aliquid aspernatur magni quaerat.
+            </p>
+        </div>
+
+    </div>
+
+    <h5 class="bg-primary  px-3 py-2 my-4">CONTACT</h5>
+
+        <div class="row mt-2 px-2" id="contact">
+        </div>
+
+    </div>
+
 </div>
 <script src="script.js"></script>
 </body>

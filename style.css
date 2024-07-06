@@ -1,3 +1,7 @@
+nav{
+    position: fixed;
+    width: 100%;
+}
 
 nav a,h6 a{
     text-decoration: none;
@@ -21,29 +25,12 @@ p,span,h6{
 li::marker{
     color: dodgerblue;
 }
-progress{
-    animation: animation-progress 3s ease-out forwards;
-}
-/* Pour Chrome, Safari, Edge */
-progress::-webkit-progress-value {
-    background-color: dodgerblue; /* Couleur de la barre de progression */
-}
 
-/* Pour Firefox */
-progress::-moz-progress-bar {
-    background-color: dodgerblue; /* Couleur de la barre de progression */
-}
-
-@keyframes animation-progress {
-    0% { width: 0; }
-    100% { width: 100%; }
-}
 
 /* page portfolio */
 
 .zoom-effect {
     overflow: hidden;
-    position: relative;
 }
 
 .zoom-effect img{
@@ -54,14 +41,4 @@ progress::-moz-progress-bar {
 .zoom-effect img:hover{
     cursor: pointer;
     transform: scale(1.1);
-}
-
-@media (max-width: 762px) {
-    #gauche {
-        margin-bottom: 10px;
-    }
-
-    progress{
-        width: 100%;
-    }
 }
