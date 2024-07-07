@@ -27,9 +27,14 @@ li::marker{
 }
 
 #competences div{
+    width: 10%;
     border-radius: 2rem;
 }
 
+#competences div img{
+    height: 90%;
+    width: 90%;
+}
 #competences div:hover{
     background-color: red;
 }
@@ -47,4 +52,11 @@ li::marker{
 .zoom-effect img:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+    #competences div{
+        width: 25%;
+        height: 5%;
+    }
 }
