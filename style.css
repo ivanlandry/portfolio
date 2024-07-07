@@ -54,10 +54,11 @@ li::marker{
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1150px) {
     #competences div{
         width: 35%;
         height: 5%;
         font-size: 1rem;
     }
 }
+
