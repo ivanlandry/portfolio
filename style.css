@@ -33,7 +33,7 @@ li::marker{
 
 #competences div img{
     height: 90%;
-    width: 90%;
+    width: 95%;
 }
 #competences div:hover{
     background-color: red;
@@ -56,7 +56,8 @@ li::marker{
 
 @media screen and (max-width: 767px) {
     #competences div{
-        width: 25%;
+        width: 35%;
         height: 5%;
+        font-size: 1rem;
     }
 }
